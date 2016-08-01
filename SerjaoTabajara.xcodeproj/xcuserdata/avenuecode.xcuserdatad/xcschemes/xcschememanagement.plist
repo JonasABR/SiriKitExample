@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>SerjaoTabajara.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>SerjaoTabajaraSiriIntent.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>SerjaoTabajaraSiriUIIntent.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>0E2877A61D37DB5E002F34AB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0E2877BF1D37DBD1002F34AB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0E2877C81D37DBD1002F34AB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0E6FE9801D3C454500BCC69A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0E6FE9931D3C659500BCC69A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

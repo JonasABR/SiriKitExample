@@ -1,0 +1,630 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E19F9431D45AB8800A9946B /* AppIntentVocabulary.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0E19F9421D45AB8800A9946B /* AppIntentVocabulary.plist */; };
+		0E2877AB1D37DB5E002F34AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2877AA1D37DB5E002F34AB /* AppDelegate.swift */; };
+		0E2877AD1D37DB5E002F34AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2877AC1D37DB5E002F34AB /* ViewController.swift */; };
+		0E2877B01D37DB5E002F34AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E2877AE1D37DB5E002F34AB /* Main.storyboard */; };
+		0E2877B21D37DB5E002F34AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E2877B11D37DB5E002F34AB /* Assets.xcassets */; };
+		0E2877B51D37DB5E002F34AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E2877B31D37DB5E002F34AB /* LaunchScreen.storyboard */; };
+		0E2877C31D37DBD1002F34AB /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2877C21D37DBD1002F34AB /* IntentHandler.swift */; };
+		0E2877D91D37DBD1002F34AB /* SerjaoTabajaraSiriIntent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0E2877C01D37DBD1002F34AB /* SerjaoTabajaraSiriIntent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0E2877E21D37EBDE002F34AB /* SerjaoIntentSendMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2877E11D37EBDE002F34AB /* SerjaoIntentSendMessage.swift */; };
+		0E2877E41D37F074002F34AB /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2877E31D37F074002F34AB /* Model.swift */; };
+		0E2877E71D37F136002F34AB /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2877E61D37F136002F34AB /* DataManager.swift */; };
+		0E2AD02B1D39035900120AF0 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2877E31D37F074002F34AB /* Model.swift */; };
+		0E2AD02C1D39035900120AF0 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2877E61D37F136002F34AB /* DataManager.swift */; };
+		0E6FE9951D3C659500BCC69A /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E2877CB1D37DBD1002F34AB /* IntentsUI.framework */; };
+		0E6FE9981D3C659500BCC69A /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6FE9971D3C659500BCC69A /* IntentViewController.swift */; };
+		0E6FE99B1D3C659500BCC69A /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E6FE9991D3C659500BCC69A /* MainInterface.storyboard */; };
+		0E6FE99F1D3C659500BCC69A /* SerjaoTabajaraSiriUIIntent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0E6FE9941D3C659500BCC69A /* SerjaoTabajaraSiriUIIntent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0E6FE9A41D3C6F2900BCC69A /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6FE9A31D3C6F2900BCC69A /* FoodViewController.swift */; };
+		0E6FE9A51D3C703400BCC69A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E2877B11D37DB5E002F34AB /* Assets.xcassets */; };
+		0E6FE9A61D3C703400BCC69A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E2877B11D37DB5E002F34AB /* Assets.xcassets */; };
+		0E6FE9A71D3C709E00BCC69A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E2877AE1D37DB5E002F34AB /* Main.storyboard */; };
+		0E6FE9A81D3C709F00BCC69A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E2877AE1D37DB5E002F34AB /* Main.storyboard */; };
+		0E6FE9A91D3C70A800BCC69A /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6FE9A31D3C6F2900BCC69A /* FoodViewController.swift */; };
+		0E6FE9AA1D3C70A900BCC69A /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6FE9A31D3C6F2900BCC69A /* FoodViewController.swift */; };
+		0E6FE9AB1D3C740F00BCC69A /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2877E61D37F136002F34AB /* DataManager.swift */; };
+		0E6FE9AC1D3C748900BCC69A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2877E31D37F074002F34AB /* Model.swift */; };
+		0E99B1BC1D395ECF0031FA88 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E99B1BB1D395ECF0031FA88 /* CoreLocation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0E2877D71D37DBD1002F34AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0E28779F1D37DB5E002F34AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0E2877BF1D37DBD1002F34AB;
+			remoteInfo = SerjaoTabajaraSiriIntent;
+		};
+		0E6FE99D1D3C659500BCC69A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0E28779F1D37DB5E002F34AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0E6FE9931D3C659500BCC69A;
+			remoteInfo = SerjaoTabajaraSiriUIIntent;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0E2877E01D37DBD1002F34AB /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0E6FE99F1D3C659500BCC69A /* SerjaoTabajaraSiriUIIntent.appex in Embed App Extensions */,
+				0E2877D91D37DBD1002F34AB /* SerjaoTabajaraSiriIntent.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0E19F9421D45AB8800A9946B /* AppIntentVocabulary.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AppIntentVocabulary.plist; sourceTree = "<group>"; };
+		0E2877A71D37DB5E002F34AB /* SerjaoTabajara.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SerjaoTabajara.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E2877AA1D37DB5E002F34AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0E2877AC1D37DB5E002F34AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0E2877AF1D37DB5E002F34AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0E2877B11D37DB5E002F34AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0E2877B41D37DB5E002F34AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0E2877B61D37DB5E002F34AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E2877C01D37DBD1002F34AB /* SerjaoTabajaraSiriIntent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SerjaoTabajaraSiriIntent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E2877C21D37DBD1002F34AB /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		0E2877C41D37DBD1002F34AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E2877CB1D37DBD1002F34AB /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		0E2877E11D37EBDE002F34AB /* SerjaoIntentSendMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerjaoIntentSendMessage.swift; sourceTree = "<group>"; };
+		0E2877E31D37F074002F34AB /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		0E2877E61D37F136002F34AB /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		0E2AD02D1D39083700120AF0 /* SerjaoTabajara.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SerjaoTabajara.entitlements; sourceTree = "<group>"; };
+		0E6FE9941D3C659500BCC69A /* SerjaoTabajaraSiriUIIntent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SerjaoTabajaraSiriUIIntent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E6FE9971D3C659500BCC69A /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		0E6FE99A1D3C659500BCC69A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		0E6FE99C1D3C659500BCC69A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E6FE9A31D3C6F2900BCC69A /* FoodViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
+		0E99B1BB1D395ECF0031FA88 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0E2877A41D37DB5E002F34AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E99B1BC1D395ECF0031FA88 /* CoreLocation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E2877BD1D37DBD1002F34AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E6FE9911D3C659500BCC69A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E6FE9951D3C659500BCC69A /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E28779E1D37DB5E002F34AB = {
+			isa = PBXGroup;
+			children = (
+				0E2877A91D37DB5E002F34AB /* SerjaoTabajara */,
+				0E2877C11D37DBD1002F34AB /* SerjaoTabajaraSiriIntent */,
+				0E6FE9961D3C659500BCC69A /* SerjaoTabajaraSiriUIIntent */,
+				0E2877CA1D37DBD1002F34AB /* Frameworks */,
+				0E2877A81D37DB5E002F34AB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0E2877A81D37DB5E002F34AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0E2877A71D37DB5E002F34AB /* SerjaoTabajara.app */,
+				0E2877C01D37DBD1002F34AB /* SerjaoTabajaraSiriIntent.appex */,
+				0E6FE9941D3C659500BCC69A /* SerjaoTabajaraSiriUIIntent.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0E2877A91D37DB5E002F34AB /* SerjaoTabajara */ = {
+			isa = PBXGroup;
+			children = (
+				0E2AD02D1D39083700120AF0 /* SerjaoTabajara.entitlements */,
+				0E2877E51D37F0FB002F34AB /* Model */,
+				0E2877AA1D37DB5E002F34AB /* AppDelegate.swift */,
+				0E2877AC1D37DB5E002F34AB /* ViewController.swift */,
+				0E6FE9A31D3C6F2900BCC69A /* FoodViewController.swift */,
+				0E2877AE1D37DB5E002F34AB /* Main.storyboard */,
+				0E2877B11D37DB5E002F34AB /* Assets.xcassets */,
+				0E2877B31D37DB5E002F34AB /* LaunchScreen.storyboard */,
+				0E2877B61D37DB5E002F34AB /* Info.plist */,
+				0E19F9421D45AB8800A9946B /* AppIntentVocabulary.plist */,
+			);
+			path = SerjaoTabajara;
+			sourceTree = "<group>";
+		};
+		0E2877C11D37DBD1002F34AB /* SerjaoTabajaraSiriIntent */ = {
+			isa = PBXGroup;
+			children = (
+				0E2877C21D37DBD1002F34AB /* IntentHandler.swift */,
+				0E2877C41D37DBD1002F34AB /* Info.plist */,
+				0E2877E11D37EBDE002F34AB /* SerjaoIntentSendMessage.swift */,
+			);
+			path = SerjaoTabajaraSiriIntent;
+			sourceTree = "<group>";
+		};
+		0E2877CA1D37DBD1002F34AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0E99B1BB1D395ECF0031FA88 /* CoreLocation.framework */,
+				0E2877CB1D37DBD1002F34AB /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0E2877E51D37F0FB002F34AB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0E2877E31D37F074002F34AB /* Model.swift */,
+				0E2877E61D37F136002F34AB /* DataManager.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0E6FE9961D3C659500BCC69A /* SerjaoTabajaraSiriUIIntent */ = {
+			isa = PBXGroup;
+			children = (
+				0E6FE9971D3C659500BCC69A /* IntentViewController.swift */,
+				0E6FE9991D3C659500BCC69A /* MainInterface.storyboard */,
+				0E6FE99C1D3C659500BCC69A /* Info.plist */,
+			);
+			path = SerjaoTabajaraSiriUIIntent;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0E2877A61D37DB5E002F34AB /* SerjaoTabajara */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E2877B91D37DB5E002F34AB /* Build configuration list for PBXNativeTarget "SerjaoTabajara" */;
+			buildPhases = (
+				0E2877A31D37DB5E002F34AB /* Sources */,
+				0E2877A41D37DB5E002F34AB /* Frameworks */,
+				0E2877A51D37DB5E002F34AB /* Resources */,
+				0E2877E01D37DBD1002F34AB /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0E2877D81D37DBD1002F34AB /* PBXTargetDependency */,
+				0E6FE99E1D3C659500BCC69A /* PBXTargetDependency */,
+			);
+			name = SerjaoTabajara;
+			productName = SerjaoTabajara;
+			productReference = 0E2877A71D37DB5E002F34AB /* SerjaoTabajara.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0E2877BF1D37DBD1002F34AB /* SerjaoTabajaraSiriIntent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E2877DD1D37DBD1002F34AB /* Build configuration list for PBXNativeTarget "SerjaoTabajaraSiriIntent" */;
+			buildPhases = (
+				0E2877BC1D37DBD1002F34AB /* Sources */,
+				0E2877BD1D37DBD1002F34AB /* Frameworks */,
+				0E2877BE1D37DBD1002F34AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SerjaoTabajaraSiriIntent;
+			productName = SerjaoTabajaraSiriIntent;
+			productReference = 0E2877C01D37DBD1002F34AB /* SerjaoTabajaraSiriIntent.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		0E6FE9931D3C659500BCC69A /* SerjaoTabajaraSiriUIIntent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E6FE9A01D3C659500BCC69A /* Build configuration list for PBXNativeTarget "SerjaoTabajaraSiriUIIntent" */;
+			buildPhases = (
+				0E6FE9901D3C659500BCC69A /* Sources */,
+				0E6FE9911D3C659500BCC69A /* Frameworks */,
+				0E6FE9921D3C659500BCC69A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SerjaoTabajaraSiriUIIntent;
+			productName = SerjaoTabajaraSiriUIIntent;
+			productReference = 0E6FE9941D3C659500BCC69A /* SerjaoTabajaraSiriUIIntent.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0E28779F1D37DB5E002F34AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = jonas;
+				TargetAttributes = {
+					0E2877A61D37DB5E002F34AB = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = HR4U4U9QPY;
+						DevelopmentTeamName = "American Eagle Outfitters Inc.";
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
+					};
+					0E2877BF1D37DBD1002F34AB = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = HR4U4U9QPY;
+						DevelopmentTeamName = "American Eagle Outfitters Inc.";
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+					};
+					0E6FE9931D3C659500BCC69A = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = HR4U4U9QPY;
+						DevelopmentTeamName = "American Eagle Outfitters Inc.";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 0E2877A21D37DB5E002F34AB /* Build configuration list for PBXProject "SerjaoTabajara" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0E28779E1D37DB5E002F34AB;
+			productRefGroup = 0E2877A81D37DB5E002F34AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0E2877A61D37DB5E002F34AB /* SerjaoTabajara */,
+				0E2877BF1D37DBD1002F34AB /* SerjaoTabajaraSiriIntent */,
+				0E6FE9931D3C659500BCC69A /* SerjaoTabajaraSiriUIIntent */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0E2877A51D37DB5E002F34AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E2877B51D37DB5E002F34AB /* LaunchScreen.storyboard in Resources */,
+				0E2877B21D37DB5E002F34AB /* Assets.xcassets in Resources */,
+				0E19F9431D45AB8800A9946B /* AppIntentVocabulary.plist in Resources */,
+				0E2877B01D37DB5E002F34AB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E2877BE1D37DBD1002F34AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E6FE9A51D3C703400BCC69A /* Assets.xcassets in Resources */,
+				0E6FE9A71D3C709E00BCC69A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E6FE9921D3C659500BCC69A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E6FE9A81D3C709F00BCC69A /* Main.storyboard in Resources */,
+				0E6FE9A61D3C703400BCC69A /* Assets.xcassets in Resources */,
+				0E6FE99B1D3C659500BCC69A /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0E2877A31D37DB5E002F34AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E2877AD1D37DB5E002F34AB /* ViewController.swift in Sources */,
+				0E6FE9A41D3C6F2900BCC69A /* FoodViewController.swift in Sources */,
+				0E2877E71D37F136002F34AB /* DataManager.swift in Sources */,
+				0E2877AB1D37DB5E002F34AB /* AppDelegate.swift in Sources */,
+				0E2877E41D37F074002F34AB /* Model.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E2877BC1D37DBD1002F34AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E2AD02B1D39035900120AF0 /* Model.swift in Sources */,
+				0E6FE9AA1D3C70A900BCC69A /* FoodViewController.swift in Sources */,
+				0E2AD02C1D39035900120AF0 /* DataManager.swift in Sources */,
+				0E2877C31D37DBD1002F34AB /* IntentHandler.swift in Sources */,
+				0E2877E21D37EBDE002F34AB /* SerjaoIntentSendMessage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E6FE9901D3C659500BCC69A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E6FE9AB1D3C740F00BCC69A /* DataManager.swift in Sources */,
+				0E6FE9A91D3C70A800BCC69A /* FoodViewController.swift in Sources */,
+				0E6FE9981D3C659500BCC69A /* IntentViewController.swift in Sources */,
+				0E6FE9AC1D3C748900BCC69A /* Model.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0E2877D81D37DBD1002F34AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0E2877BF1D37DBD1002F34AB /* SerjaoTabajaraSiriIntent */;
+			targetProxy = 0E2877D71D37DBD1002F34AB /* PBXContainerItemProxy */;
+		};
+		0E6FE99E1D3C659500BCC69A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0E6FE9931D3C659500BCC69A /* SerjaoTabajaraSiriUIIntent */;
+			targetProxy = 0E6FE99D1D3C659500BCC69A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0E2877AE1D37DB5E002F34AB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0E2877AF1D37DB5E002F34AB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0E2877B31D37DB5E002F34AB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0E2877B41D37DB5E002F34AB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		0E6FE9991D3C659500BCC69A /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0E6FE99A1D3C659500BCC69A /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0E2877B71D37DB5E002F34AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0E2877B81D37DB5E002F34AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0E2877BA1D37DB5E002F34AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SerjaoTabajara/SerjaoTabajara.entitlements;
+				INFOPLIST_FILE = SerjaoTabajara/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.sirikittest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		0E2877BB1D37DB5E002F34AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SerjaoTabajara/SerjaoTabajara.entitlements;
+				INFOPLIST_FILE = SerjaoTabajara/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.sirikittest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		0E2877DE1D37DBD1002F34AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SerjaoTabajaraSiriIntent/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.sirikittest.SerjaoTabajaraSiriIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		0E2877DF1D37DBD1002F34AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SerjaoTabajaraSiriIntent/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.sirikittest.SerjaoTabajaraSiriIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		0E6FE9A11D3C659500BCC69A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SerjaoTabajaraSiriUIIntent/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.sirikittest.SerjaoTabajaraSiriUIIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		0E6FE9A21D3C659500BCC69A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SerjaoTabajaraSiriUIIntent/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.sirikittest.SerjaoTabajaraSiriUIIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0E2877A21D37DB5E002F34AB /* Build configuration list for PBXProject "SerjaoTabajara" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E2877B71D37DB5E002F34AB /* Debug */,
+				0E2877B81D37DB5E002F34AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0E2877B91D37DB5E002F34AB /* Build configuration list for PBXNativeTarget "SerjaoTabajara" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E2877BA1D37DB5E002F34AB /* Debug */,
+				0E2877BB1D37DB5E002F34AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0E2877DD1D37DBD1002F34AB /* Build configuration list for PBXNativeTarget "SerjaoTabajaraSiriIntent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E2877DE1D37DBD1002F34AB /* Debug */,
+				0E2877DF1D37DBD1002F34AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0E6FE9A01D3C659500BCC69A /* Build configuration list for PBXNativeTarget "SerjaoTabajaraSiriUIIntent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E6FE9A11D3C659500BCC69A /* Debug */,
+				0E6FE9A21D3C659500BCC69A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0E28779F1D37DB5E002F34AB /* Project object */;
+}

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11163.2" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11133"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Food View Controller-->
+        <scene sceneID="6fl-ur-qbc">
+            <objects>
+                <viewController storyboardIdentifier="FoodViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="h0A-R1-U62" customClass="FoodViewController" customModule="SerjaoTabajara" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QNU-dV-Y4Z"/>
+                        <viewControllerLayoutGuide type="bottom" id="1dl-85-m1t"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Cwc-9T-nM8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="999" verticalCompressionResistancePriority="999" text="Peça um salgado" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="7II-Sp-Qb9">
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sol" translatesAutoresizingMaskIntoConstraints="NO" id="uiB-tv-AXM"/>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="uiB-tv-AXM" secondAttribute="bottom" constant="16" id="5AY-3E-glK"/>
+                            <constraint firstItem="uiB-tv-AXM" firstAttribute="leading" secondItem="Cwc-9T-nM8" secondAttribute="leadingMargin" id="6WL-Ny-2DJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7II-Sp-Qb9" secondAttribute="trailing" id="Rs2-FC-jBc"/>
+                            <constraint firstItem="uiB-tv-AXM" firstAttribute="top" secondItem="7II-Sp-Qb9" secondAttribute="bottom" constant="2" id="UPD-e1-2D3"/>
+                            <constraint firstItem="7II-Sp-Qb9" firstAttribute="leading" secondItem="Cwc-9T-nM8" secondAttribute="leadingMargin" id="mbo-G7-nS2"/>
+                            <constraint firstItem="7II-Sp-Qb9" firstAttribute="top" secondItem="Cwc-9T-nM8" secondAttribute="topMargin" constant="8" id="soH-e3-b9d"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uiB-tv-AXM" secondAttribute="trailing" id="u3U-ml-WaL"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="150"/>
+                    <connections>
+                        <outlet property="foodImage" destination="uiB-tv-AXM" id="VWB-X5-cEO"/>
+                        <outlet property="foodTitle" destination="7II-Sp-Qb9" id="c8t-FL-PFC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BD9-Bc-CX6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-805" y="104"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SerjaoTabajara" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header_title" translatesAutoresizingMaskIntoConstraints="NO" id="R2q-Dq-C8d">
+                                <color key="backgroundColor" red="0.9422943320652879" green="1" blue="0.87728415448405073" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="R2q-Dq-C8d" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="75Y-sk-Xvg"/>
+                            <constraint firstAttribute="trailing" secondItem="R2q-Dq-C8d" secondAttribute="trailing" id="AOW-0A-n3u"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="R2q-Dq-C8d" secondAttribute="bottom" id="PHN-qD-QSc"/>
+                            <constraint firstItem="R2q-Dq-C8d" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="VTa-Bg-lYI"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="header_title" width="1600" height="1200"/>
+        <image name="sol" width="600" height="470"/>
+    </resources>
+</document>
